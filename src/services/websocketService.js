@@ -4,7 +4,7 @@ import WebSocket from 'ws';
 dotenv.config();
 
 //const socket = new WebSocket(process.env.WS_ADDRESS);
-const socket = new WebSocket('ws://camel-quarkus-ws-to-event.ws-camel-kafka.svc.cluster.local:8080/echo');
+const socket = new WebSocket('wss://camel-quarkus-ws-to-event.ws-camel-kafka.svc.cluster.local:8080/echo');
 
 socket.on('open', () => {
     console.log("Conectado ao serviço Camel via WebSocket no OpenShift.");
