@@ -1,5 +1,5 @@
 import express from 'express';
-import { sendMessage } from '../controllers/messageController.js';
+import { sendMessage } from '../services/websocketService.js';
 
 const router = express.Router();
 
